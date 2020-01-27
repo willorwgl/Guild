@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<script type="text/javascript">
+    //   window.classIcons = {
+    //       warlock: "<%= image_url("class_icons/warlock.png") %>",
+    //       paladin: "<%= image_url("class_icons/paladin.png") %>",
+    //       priest: "<%= image_url("class_icons/priest.png") %>",
+    //       mage: "<%= image_url("class_icons/mage.png") %>",
+    //       warrior: "<%= image_url("class_icons/warrior.png") %>",
+    //       druid: "<%= image_url("class_icons/druid.png") %>",
+    //       rogue: "<%= image_url("class_icons/rogue.png") %>",
+    //       hunter: "<%= image_url("class_icons/hunter.png") %>",
+    //       shaman: "<%= image_url("class_icons/shaman.png") %>"         
+    //   },
+    //     window.raceIcons = {
+    //       dwarf: "<%= image_url("race_icons/dwarf.png") %>",
+    //       gnome: "<%= image_url("race_icons/gnome.png") %>",
+    //       human: "<%= image_url("race_icons/human.png") %>",
+    //       nightelf: "<%= image_url("race_icons/nightelf.png") %>",
+    //       orc: "<%= image_url("race_icons/orc.png") %>",
+    //       tauren: "<%= image_url("race_icons/tauren.png") %>",
+    //       troll: "<%= image_url("race_icons/troll.png") %>",
+    //       undead: "<%= image_url("race_icons/undead.png") %>",        
+    //   }
+
+
+</script>
+
+      <% if logged_in? %>
+        
+      <script type="text/javascript">
+            window.currentUser = <%= render(
+                  "api/users/user.json.jbuilder",
+                  user: current_user
+            ).html_safe %>
+      </script>
+    <% end %>
+
+
+
+
+<body>
+    <div id="root"></div>
+</body>
+</html>
