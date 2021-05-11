@@ -4,7 +4,7 @@
   "dependencies": {
     "@rails/webpacker": "4.2.2",
     "axios": "^0.19.1",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.21",
     "vue": "^2.6.11",
     "vue-3d-model": "^1.2.2",
     "vue-loader": "^15.8.3",
